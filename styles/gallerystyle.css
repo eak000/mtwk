@@ -1,0 +1,183 @@
+
+h1 { /*font-variant: small-caps;*/
+	 font-family: Lucida Console, monospace;
+	 color: lime; text-shadow: black 0.1em 0.1em 0.2em;
+	 padding: 20px;
+	 margin: auto;
+	 clear: both;
+	 /*position: relative;*/
+	 /*I want this in the middle. how?*/
+}
+h2 {	color: lime;
+	/*font-variant: small-caps;*/
+	font-family: Lucida Console, monospace;
+}
+
+h3 {	font-family: Lucida Console, monospace;
+		font-size: 1em;
+
+}
+
+p 	{font-family:Lucida Console, monospace;
+	color: white;
+	margin: 0 40px 20px 40px;
+}
+ul {float:left;
+
+}
+/***Style the unordered list with the class 'enlarge'***/
+ul.enlarge{
+list-style-type:none; /*remove the bullet point*/
+}
+ul.enlarge li{
+display:inline-block; /*places the images in a line*/
+position: relative; /*allows precise positioning of the popup image when used with position:absolute  */
+z-index: 0; /*resets the stack order of the list items  */
+margin:10px 40px 0 20px; /*space between the images*/
+}
+ul.enlarge span{
+position:absolute; 
+left: -9999px; /*moves the span off the page, effectively hidding it from view*/
+}
+ul.enlarge img{
+/*give the thumbnails a frame*/
+background-color:#eae9d4; /*frame colour*/
+padding: 6px; /*frame size*/
+/*add a drop shadow to the frame*/
+-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+/*and give the corners a small curve*/
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+ul.enlarge li:hover{
+z-index: 50; /*places the popups infront of the thumbnails, which we gave a z-index of 0 in step 1*/ 
+cursor:pointer; /*changes the cursor to a hand*/
+}
+/***We bring the large image back onto the page by reducing left from -9999px to figures below***/ 
+ul.enlarge li:hover span{ /*positions the <span> when the <li> (which contains the thumbnail) is hovered*/ 
+top: -300px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+left: -20px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+/***To make it look neater we used :nth-child to set a different left distance for each image***/ 
+ul.enlarge li:hover:nth-child(2) span{
+left: -100px; 
+}
+ul.enlarge li:hover:nth-child(3) span{
+left: -200px; 
+}
+/***Override the styling of images set in step 3 to make the frame smaller and the background darker***/
+ul.enlarge span img{
+padding: 2px; /*size of the frame*/
+background: #ccc; /*colour of the frame*/
+}
+/***Style the <span> containing the framed images and the caption***/
+ul.enlarge span{
+/**Style the frame**/
+padding: 10px; /*size of the frame*/
+background:#eae9d4; /*colour of the frame*/
+/*add a drop shadow to the frame*/
+-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75));
+-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+box-shadow: 0 0 20px rgba(0,0,0, .75);
+/*give the corners a curve*/
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius:8px;
+/**Style the caption**/
+font-family: 'Lucida Console', sans-serif; /*Droid Sans is available from Google fonts*/
+font-size:.9em;
+text-align: center;
+color: #495a62;
+}
+li {list-style-type:none;
+	display: inline;
+	margin-left: 15px;
+	padding: 10px;
+	font-family:Lucida Console, monospace;
+	}
+
+a {color: orange;
+        text-decoration:none;
+}
+a:hover {color: lime;
+}
+#navbuttons {
+	margin: 0 auto;
+}
+#wrapper {max-width:1700px;
+			margin:auto;
+		}
+.important {color:yellow;
+} 
+a.nav, a.nav:link, a.nav:visited {display:block; width:150px; height:25px;
+		background:#EB8C37; 
+		border:1px solid #000;
+		margin-top:2px; 
+		text-align:center; 
+		text-decoration:none; 
+		font-family:Lucida Console, monospace;
+		font-size:16px; 
+		color:#000;
+		line-height: 24px;
+		overflow: hidden;
+		float: left;
+		margin-right: 2px;
+}
+a.nav:hover {color:black; background:#FFB137;
+}
+a.nav:active {color:black; background:lime;
+}
+strong: {color=lime;
+}
+body { background-color: #474247;
+		margin: 0;
+		padding: 0;
+		color: lime;
+}
+#header {background: url('../images/bridgebanner3.jpg') no-repeat left top  ;
+		display: block;
+		margin-bottom:10px;
+		height: 237px
+}
+/*I want these centered*/
+#navbuttons {/*position: absolute;*/
+		margin-left=200px;
+}
+/*#sidebar {position: relative;
+		height: 600px;
+		width: 200px;
+		float: left;	
+		padding: 10px;
+		border: 1px solid black;
+		border-radius: 10px;
+		color: lime;
+
+}*/
+#body {	position: absolute;
+		/*float: right;*/
+		margin-left:150px;
+		margin-top: 40px;
+		height: 90%;
+		width: 70%;
+		background-color: #474247;
+		padding: 20px;
+
+
+#footer {background: url('../images/bridgebanner3.jpg') no-repeat center top  ;
+		  position: fixed;
+		bottom: 0;
+		left: 0;
+		height: 237px;
+		background-color: white;
+		width: 100%;
+  		
+}
+img { left-margin: 25px;
+		
+}
+
+b {font-size:1.1em;
+	}

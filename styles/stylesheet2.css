@@ -1,0 +1,70 @@
+﻿
+h1 { /*font-variant: small-caps;*/
+	 font-family: Lucida Console, monospace;
+	 color: lime;
+	 padding: 20px;
+	 margin: auto;
+	 background-color: black;
+}
+
+h2 {	color: lime;
+	/*font-variant: small-caps;*/
+	font-family: Lucida Console, monospace;
+}
+
+h3 {	font-family: Lucida Console, monospace;
+		font-size: 1em;
+
+}
+
+p 	{font-family:Lucida Console, monospace;
+	color: lime;
+}
+
+li {font-family:Lucida Console, monospace;
+}
+a {color: orange;
+}
+
+/*how can I get rid of the margin around the page?*/
+body { background-color: black;
+		margin: none;
+		padding: none;
+		color: lime;
+}
+/*#header {background: url('../images/bridgebanner3.jpg') no-repeat center top  ;
+		display: block;
+		margin-bottom:10px;
+		height: 237px
+}*/
+#sidebar {position: relative;
+		height: 600px;
+		width: 200px;
+		float: left;	
+		padding: 10px;
+		border: 1px solid black;
+		border-radius: 10px;
+		color: lime;
+
+}
+#body {	position: absolute;
+		float: right;
+		margin-left:250px;
+		height: 90%;
+		width: 70%;
+		background-color: black;
+		padding: 20px;
+		border-radius: 10px;
+
+#footer {background: url('../images/bridgebanner3.jpg') no-repeat center top  ;
+		  position: fixed;
+		bottom: 0;
+		left: 0;
+		height: 237px;
+		background-color: white;
+		width: 100%;
+  		
+}
+img {
+		left-margin: 25px;
+}

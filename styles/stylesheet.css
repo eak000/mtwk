@@ -1,0 +1,108 @@
+﻿
+h1 { /*font-variant: small-caps;*/
+	 font-family: Lucida Console, monospace;
+	 color: lime; text-shadow: black 0.1em 0.1em 0.2em;
+	 padding: 20px;
+	 margin: auto;
+	 clear: both;
+	 /*position: relative;*/
+	 /*I want this in the middle. how?*/
+}
+h2 {	color: lime;
+	/*font-variant: small-caps;*/
+	font-family: Lucida Console, monospace;
+}
+
+h3 {	font-family: Lucida Console, monospace;
+		font-size: 1em;
+
+}
+
+p 	{font-family:Lucida Console, monospace;
+	color: white;
+	margin: 0 40px 20px 40px;
+}
+/*ul {float:left;
+}*/
+li {font-family:Lucida Console, monospace;
+
+}
+a {color: orange;
+        text-decoration:none;
+}
+a:hover {color: lime;
+}
+#navbuttons {
+	margin: 0 auto;
+}
+#wrapper {max-width:1700px;
+			margin:auto;
+		}
+.important {color:yellow;
+} 
+a.nav, a.nav:link, a.nav:visited {display:block; width:150px; height:25px;
+		background:#EB8C37; 
+		border:1px solid #000;
+		margin-top:2px; 
+		text-align:center; 
+		text-decoration:none; 
+		font-family:Lucida Console, monospace;
+		font-size:16px; 
+		color:#000;
+		line-height: 24px;
+		overflow: hidden;
+		float: left;
+		margin-right: 2px;
+}
+a.nav:hover {color:black; background:#FFB137;
+}
+a.nav:active {color:black; background:lime;
+}
+strong: {color=lime;
+}
+body { background-color: #474247;
+		margin: 0;
+		padding: 0;
+		color: lime;
+}
+#header {background: url('../images/bridgebanner3.jpg') no-repeat left top  ;
+		display: block;
+		margin-bottom:10px;
+		height: 237px
+}
+/*I want these centered*/
+#navbuttons {/*position: absolute;*/
+		margin-left=200px;
+}
+/*#sidebar {position: relative;
+		height: 600px;
+		width: 200px;
+		float: left;	
+		padding: 10px;
+		border: 1px solid black;
+		border-radius: 10px;
+		color: lime;
+
+}*/
+#body {	position: absolute;
+		/*float: right;*/
+		margin-left:150px;
+		margin-top: 40px;
+		height: 90%;
+		width: 70%;
+		background-color: #474247;
+		padding: 20px;
+		border-radius: 10px;
+
+/*#footer {background: url('../images/bridgebanner3.jpg') no-repeat center top  ;
+		  position: fixed;
+		bottom: 0;
+		left: 0;
+		height: 237px;
+		background-color: white;
+		width: 100%;
+  		
+}*/
+img { left-margin: 25px;
+		
+}
